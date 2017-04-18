@@ -1,26 +1,93 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  
-  <title>搭建hexo博客——部署到GitHub及coding全教程 | 梅载风博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  
-    <meta name="author" content="梅载风">
-  
-  
-    <meta name="description" content="因为各种原因，前前后后搭建hexo博客过十次，每次都要在网站找教程，有些不全，有些过时，搭建过程中老是出问题，特别郁闷，后来换了域名，在windows和Mac上分别搭建时，用cmd markdown记录了下来，今天分享在简书。
-环境准备
-安装git;官网安装node.js;官网
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-注册GitHub
 
-注册一个『GitHub』帐号，已有的请忽略
 
-建立与你用户名对应的仓库，仓库名必须为『your_u">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <meta name="description" content="因为各种原因，前前后后搭建hexo博客过十次，每次都要在网站找教程，有些不全，有些过时，搭建过程中老是出问题，特别郁闷，后来换了域名，在windows和Mac上分别搭建时，用cmd markdown记录了下来，今天分享在简书。
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="因为各种原因，前前后后搭建hexo博客过十次，每次都要在网站找教程，有些不全，有些过时，搭建过程中老是出问题，特别郁闷，后来换了域名，在windows和Mac上分别搭建时，用cmd markdown记录了下来，今天分享在简书。
 环境准备
 安装git;官网安装node.js;官网
 
@@ -62,57 +129,253 @@
 
 建立与你用户名对应的仓库，仓库名必须为『your_u">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/4089578-c68a27fab528e284.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-  
-  
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://meizaifeng.com/2017/04/06/搭建hexo博客——部署到GitHub及coding全教程/"/>
+
+
+
+
+
+  <title> 搭建hexo博客——部署到GitHub及coding全教程 | 梅载风博客 </title>
 </head>
 
-<body>
-  <div class="wrapper">
-    <header id="header">
-  <div class="title">
-    <h1><a href="/">梅载风博客</a></h1>
-    <p><a href="/"></a></p>
-  </div>
-  <nav class="nav">
-    <ul>
-      
-        <li><a href="/archives">Archives</a></li>
-      
-        <li><a href="/reading">Reading</a></li>
-      
-        <li><a href="/about">about</a></li>
-      
-      
-    </ul>
-    <div class="clearfix"></div>
-  </nav>
-  <div class="clearfix"></div>
-</header>
-    <div class="content"><article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2017/04/06/搭建hexo博客——部署到GitHub及coding全教程/">
-  <time datetime="2017-04-06T13:40:49.000Z">
-    2017-04-06
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title">搭建hexo博客——部署到GitHub及coding全教程</h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
   
 
-  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <div class="entry">
+  
     
-      <p>因为各种原因，前前后后搭建hexo博客过十次，每次都要在网站找教程，有些不全，有些过时，搭建过程中老是出问题，特别郁闷，后来换了域名，在windows和Mac上分别搭建时，用<a href="https://www.zybuluo.com" target="_blank" rel="external">cmd markdown</a>记录了下来，今天分享在简书。</p>
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">梅载风博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://meizaifeng.com/2017/04/06/搭建hexo博客——部署到GitHub及coding全教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="梅载风">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梅载风博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                搭建hexo博客——部署到GitHub及coding全教程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-06T21:40:49+08:00">
+                2017-04-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工具篇/" itemprop="url" rel="index">
+                    <span itemprop="name">工具篇</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>因为各种原因，前前后后搭建hexo博客过十次，每次都要在网站找教程，有些不全，有些过时，搭建过程中老是出问题，特别郁闷，后来换了域名，在windows和Mac上分别搭建时，用<a href="https://www.zybuluo.com" target="_blank" rel="external">cmd markdown</a>记录了下来，今天分享在简书。</p>
 <h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><blockquote>
 <p>安装git;<a href="https://git-scm.com/" target="_blank" rel="external">官网</a><br>安装node.js;<a href="https://nodejs.org/en/download/" target="_blank" rel="external">官网</a></p>
 </blockquote>
@@ -237,71 +500,327 @@
 </ul>
 </blockquote>
 
-    
-  </div>
-  <footer>
-    
       
-  <div class="categories">
-    <a class="categories-link" href="/categories/工具篇/">工具篇</a>
-  </div>
+    </div>
+
+    <div>
+      
+        
 
       
-  <div class="tags">
-    <a class="tags-link" href="/tags/hexo/">hexo</a>
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="梅载风" />
+          <p class="site-author-name" itemprop="name">梅载风</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册GitHub"><span class="nav-number">2.</span> <span class="nav-text">注册GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册Coding"><span class="nav-number">3.</span> <span class="nav-text">注册Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加ssh到GitHub、Coding"><span class="nav-number">4.</span> <span class="nav-text">添加ssh到GitHub、Coding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置用户名和密码"><span class="nav-number">4.1.</span> <span class="nav-text">设置用户名和密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成密钥"><span class="nav-number">4.2.</span> <span class="nav-text">生成密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加SSH-Key到GitHub"><span class="nav-number">4.3.</span> <span class="nav-text">添加SSH Key到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加SSH-Key到Coding"><span class="nav-number">4.4.</span> <span class="nav-text">添加SSH Key到Coding</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">5.</span> <span class="nav-text">安装hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">5.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成静态页面"><span class="nav-number">5.2.</span> <span class="nav-text">生成静态页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地启动"><span class="nav-number">5.3.</span> <span class="nav-text">本地启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写文章"><span class="nav-number">5.4.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章摘要"><span class="nav-number">5.5.</span> <span class="nav-text">文章摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义页面"><span class="nav-number">5.6.</span> <span class="nav-text">自定义页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到git"><span class="nav-number">5.7.</span> <span class="nav-text">部署到git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题安装"><span class="nav-number">6.</span> <span class="nav-text">主题安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名绑定"><span class="nav-number">7.</span> <span class="nav-text">域名绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#域名配置文件"><span class="nav-number">7.1.</span> <span class="nav-text">域名配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解析"><span class="nav-number">7.2.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#域名服务商修改dns"><span class="nav-number">7.3.</span> <span class="nav-text">域名服务商修改dns</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改域名"><span class="nav-number">7.4.</span> <span class="nav-text">修改域名</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">梅载风</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
 
     
-    <div class="clearfix"></div>
-  </footer>
-</article>
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
 
-</div>
   </div>
-  <footer id="footer"><div class="copyright">
+
   
-  &copy; 2017 <a href="/">梅载风</a>
-  
-</div>
-<div class="theme-copyright">
-  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
-   | 
-  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
-</div>
-<div class="clearfix"></div>
-
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-本站总访问量<span id="busuanzi_value_site_pv"></span>次
-
-</footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<script src="/js/scale.fix.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
 
 <script type="text/javascript">
-  var disqus_shortname = 'meizaifeng-1';
-
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  }());
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-  (function($){
-    $('.fancybox').fancybox();
-  })(jQuery);
-</script>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
