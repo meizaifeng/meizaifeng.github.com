@@ -110,7 +110,11 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4089578-c68a27fab528e284.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4089578-77ab2df3740d3632.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4089578-16010e2019bac5a8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-04-24T12:58:08.000Z">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4089578-ed723e03b8f7113a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4089578-d91e363b19f4de02.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4089578-b3e34c2e3ea3455b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4089578-30b60e9e18371807.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-04-24T13:00:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建hexo博客——部署到GitHub及coding全教程">
 <meta name="twitter:description" content="因为各种原因，前前后后搭建hexo博客过十次，每次都要在网站找教程，有些不全，有些过时，搭建过程中老是出问题，特别郁闷，后来换了域名，在windows和Mac上分别搭建时，用cmd markdown记录了下来。
@@ -447,37 +451,94 @@
 <h2 id="添加ssh到GitHub、Coding"><a href="#添加ssh到GitHub、Coding" class="headerlink" title="添加ssh到GitHub、Coding"></a>添加ssh到GitHub、Coding</h2><h3 id="设置用户名和密码"><a href="#设置用户名和密码" class="headerlink" title="设置用户名和密码"></a>设置用户名和密码</h3><blockquote>
 <p>（使用git工具，不是命令行工具，在空白处点击鼠标右键，点击<code>Git Bash Here</code>）首先设置你的用户名密码：</p>
 </blockquote>
-<figure class="highlight plain"><figcaption><span>config --global user.email "meizaifeng@gmail.com"</span></figcaption><table><tr><td class="code"><pre><div class="line">git config --global user.name &quot;meizaifeng&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git config --global user.email &quot;meizaifeng@gmail.com&quot;</div><div class="line">git config --global user.name &quot;meizaifeng&quot;</div></pre></td></tr></table></figure>
 <p><img src="http://upload-images.jianshu.io/upload_images/4089578-16010e2019bac5a8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h3 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h3><figure class="highlight plain"><figcaption><span>-t rsa -C "meizaifeng@gmail.com"</span></figcaption><table><tr><td class="code"><pre><div class="line">```</div><div class="line"></div><div class="line">过程中</div></pre></td></tr></table></figure>
-<p>Generating public/private rsa key pair.  #生成公共/私有密钥对<br>Enter file in which to save the key (/c/Users/jiang/.ssh/id_rsa):  #输入保存密钥文件（直接回车）<br>Created directory ‘/c/Users/jiang/.ssh’.<br>Enter passphrase (empty for no passphrase):  #输入密码(密码不显示)<br>Enter same passphrase again:  #再次输入相同密码<br>……<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">### 添加SSH Key到GitHub</div><div class="line"></div><div class="line">在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。</div><div class="line"></div><div class="line">1、打开本地`C:\Documents and Settings\Administrator.ssh\id_rsa.pub`文件。此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。</div><div class="line"></div><div class="line">&gt; Mac用户请在下面查找：</div><div class="line"></div><div class="line">Find前往文件夹~/.ssh/id_rsa.pub打开id_rsa.pub文件，里面的信息即为SSH key，将这些信息复制到Github的Add SSH key页面即可。</div><div class="line"></div><div class="line">2、登陆Github。点击右上角的用户头像， `Settings`---&gt;`SSH and GPG keys` ---&gt; `New SSH key`</div><div class="line"></div><div class="line">3、把你本地生成的密钥复制到里面（key文本框中）， 点击 `Add SSH key` 就ok了</div><div class="line"></div><div class="line">打开：</div><div class="line"></div><div class="line">![](http://upload-images.jianshu.io/upload_images/4089578-ed723e03b8f7113a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</div><div class="line"></div><div class="line">添加：</div><div class="line"></div><div class="line">![](http://upload-images.jianshu.io/upload_images/4089578-d91e363b19f4de02.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</div><div class="line"></div><div class="line">验证一下：</div></pre></td></tr></table></figure></p>
-<p>ssh -T git@github.com<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">&gt; 验证期间需要输入`yes`及ssh密码</div><div class="line"></div><div class="line">![](http://upload-images.jianshu.io/upload_images/4089578-b3e34c2e3ea3455b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</div><div class="line"></div><div class="line">### 添加SSH Key到Coding</div><div class="line"></div><div class="line">&gt; conding有别于GitHub，需要在账户添加ssh key，而不是仓库。</div><div class="line"></div><div class="line">![](http://upload-images.jianshu.io/upload_images/4089578-30b60e9e18371807.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</div><div class="line"></div><div class="line">验证一下：</div></pre></td></tr></table></figure></p>
-<p>ssh -T git@git.coding.net<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">验证结果同上一步。</div><div class="line"></div><div class="line">## 安装hexo</div><div class="line"></div><div class="line">执行如下命令：</div></pre></td></tr></table></figure></p>
-<p>npm install hexo-cli -g<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">Mac请执行下列命令</div></pre></td></tr></table></figure></p>
-<p>$ sudo npm install -g hexo<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">### 初始化</div><div class="line"></div><div class="line">在自己认为合适的地方创建一个文件夹（自定义文件夹名），然后在文件夹内的空白处按住Shift+鼠标右键，然后点击在此处打开命令行窗口。（同样要记住啦，下文中会使用在当前目录打开命令行来代指上述的操作）</div><div class="line"></div><div class="line">然后，执行init命令初始化hexo到你指定的目录：</div></pre></td></tr></table></figure></p>
-<p>hexo init<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">&gt;也可以cd到目标目录，执行hexo init。</div><div class="line"></div><div class="line">### 生成静态页面</div><div class="line"></div><div class="line">cd 到你的init目录，执行如下命令，生成静态页面至hexo\public\目录。</div></pre></td></tr></table></figure></p>
-<p>hexo generate<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">&gt;命令必须在init目录下执行，否则不成功，但是也不报错。</div><div class="line"></div><div class="line">当你修改文章Tag或内容，不能正确重新生成内容，可以删除hexo\db.json后重试，还不行就到public目录删除对应的文件，重新生成。</div><div class="line"></div><div class="line">在此过程中如出现</div></pre></td></tr></table></figure></p>
-<p>$ hexo generate<br>ERROR Local hexo not found in E:\Dropbox\Hexo<br>ERROR Try running: ‘npm install hexo –save’<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">请执行</div></pre></td></tr></table></figure></p>
-<p>npm install hexo –save<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">再次生成静态页面</div></pre></td></tr></table></figure></p>
-<p>hexo generate<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">### 本地启动</div><div class="line"></div><div class="line">执行如下命令，启动本地服务，进行文章预览调试。</div></pre></td></tr></table></figure></p>
-<p>hexo server<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">浏览器输入http://localhost:4000就可以看到效果。</div><div class="line"></div><div class="line">&gt; 如打开失败，请运行下列代码，换个端口</div></pre></td></tr></table></figure></p>
-<p>hexo s -p 3600<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">http://localhost:3600</div><div class="line"></div><div class="line">### 写文章</div><div class="line"></div><div class="line">执行new命令，生成指定名称的文章至hexo\source\_posts\postName.md。</div></pre></td></tr></table></figure></p>
-<p>hexo new 新建文章<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">### 文章摘要</div><div class="line"></div><div class="line">在需要显示摘要的地方添加如下代码即可：</div></pre></td></tr></table></figure></p>
-<p>以上是摘要</p>
-<p>以下是余下全文<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">### 自定义页面</div><div class="line"></div><div class="line">执行new page命令</div></pre></td></tr></table></figure></p>
-<p>hexo new page “about”<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">在hexo\source\下会生成about目录，里面有个index.md，直接编辑就可以了，然后在主题的_config.yml中将其配置显示出来。</div><div class="line"></div><div class="line">上述步骤，也可以手工生成，在hexo\source\下手工新建about和index.md也是完全等价的。</div><div class="line"></div><div class="line">### 部署到git</div><div class="line"></div><div class="line">修改_config.yml文件</div></pre></td></tr></table></figure></p>
-<p>deploy:<br>type: git<br>repo:<br>github: git@github.com:meizaifeng/meizaifeng.github.com.git,master  #你的GitHub Pages仓库<br>coding: git@git.coding.net:meizaifeng/meizaifeng.git,master  #你的coding仓库<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">执行</div></pre></td></tr></table></figure></p>
-<p>hexo deploy<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">&gt; 在执行 hexo deploy 后,若出现 error deployer not found:git 的错误,执行：</div></pre></td></tr></table></figure></p>
-<p>npm install hexo-deployer-git –save<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">再次执行</div></pre></td></tr></table></figure></p>
-<p>hexo g<br>hexo d<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">## 主题安装</div><div class="line"></div><div class="line">安装主题的方法就是一句git命令：</div></pre></td></tr></table></figure></p>
-<p>git clone <a href="https://github.com/heroicyang/hexo-theme-modernist.git" target="_blank" rel="external">https://github.com/heroicyang/hexo-theme-modernist.git</a> themes/modernist    # modernist为主题名称<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">目录是否是modernist无所谓，只要与_config.yml文件一致即可。</div><div class="line"></div><div class="line">安装完成后，打开hexo\_config.yml，修改主题`theme: modernist`</div><div class="line"></div><div class="line">## 域名绑定</div><div class="line"></div><div class="line">### 域名配置文件</div><div class="line"></div><div class="line">在source目录下创建一个`CNAME`文件，不带后缀。创建后写入你的域名.里面的内容为域名不要http以及www等前缀，只需写入域名本身，例如</div></pre></td></tr></table></figure></p>
-<p>meizaifeng.com<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">随后执行，这个是和coding关联的</div></pre></td></tr></table></figure></p>
-<p>cd source/<br>touch Staticfile  #名字必须是Staticfile<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">### 解析</div><div class="line"></div><div class="line">### 域名服务商修改dns</div><div class="line"></div><div class="line">向你的 DNS 配置中添加 4 条记录</div></pre></td></tr></table></figure></p>
-<p>主机记录  记录类型  记录值</p>
-<p>www      CNAME    username.github.io  #线路类型：国外</p>
-<p>@        CNAME    username.github.io  #线路类型：国外</p>
-<p>@        CNAME    pages.coding.me      #线路类型：国内</p>
-<p>www      CNAME    pages.coding.me      #线路类型：国内<br>```</p>
+<h3 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;meizaifeng@gmail.com&quot;</div></pre></td></tr></table></figure>
+<p>过程中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Generating public/private rsa key pair.  #生成公共/私有密钥对</div><div class="line">Enter file in which to save the key (/c/Users/jiang/.ssh/id_rsa):  #输入保存密钥文件（直接回车）</div><div class="line">Created directory &apos;/c/Users/jiang/.ssh&apos;.</div><div class="line">Enter passphrase (empty for no passphrase):  #输入密码(密码不显示)</div><div class="line">Enter same passphrase again:  #再次输入相同密码</div><div class="line">……</div></pre></td></tr></table></figure>
+<h3 id="添加SSH-Key到GitHub"><a href="#添加SSH-Key到GitHub" class="headerlink" title="添加SSH Key到GitHub"></a>添加SSH Key到GitHub</h3><p>在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。</p>
+<p>1、打开本地<code>C:\Documents and Settings\Administrator.ssh\id_rsa.pub</code>文件。此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。</p>
+<blockquote>
+<p>Mac用户请在下面查找：</p>
+</blockquote>
+<p>Find前往文件夹~/.ssh/id_rsa.pub打开id_rsa.pub文件，里面的信息即为SSH key，将这些信息复制到Github的Add SSH key页面即可。</p>
+<p>2、登陆Github。点击右上角的用户头像， <code>Settings</code>—&gt;<code>SSH and GPG keys</code> —&gt; <code>New SSH key</code></p>
+<p>3、把你本地生成的密钥复制到里面（key文本框中）， 点击 <code>Add SSH key</code> 就ok了</p>
+<p>打开：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4089578-ed723e03b8f7113a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>添加：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4089578-d91e363b19f4de02.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>验证一下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
+<blockquote>
+<p>验证期间需要输入<code>yes</code>及ssh密码</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/4089578-b3e34c2e3ea3455b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h3 id="添加SSH-Key到Coding"><a href="#添加SSH-Key到Coding" class="headerlink" title="添加SSH Key到Coding"></a>添加SSH Key到Coding</h3><blockquote>
+<p>conding有别于GitHub，需要在账户添加ssh key，而不是仓库。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/4089578-30b60e9e18371807.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>验证一下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ssh -T git@git.coding.net</div></pre></td></tr></table></figure>
+<p>验证结果同上一步。</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>执行如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<p>Mac请执行下列命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo npm install -g hexo</div></pre></td></tr></table></figure>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>在自己认为合适的地方创建一个文件夹（自定义文件夹名），然后在文件夹内的空白处按住Shift+鼠标右键，然后点击在此处打开命令行窗口。（同样要记住啦，下文中会使用在当前目录打开命令行来代指上述的操作）</p>
+<p>然后，执行init命令初始化hexo到你指定的目录：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
+<blockquote>
+<p>也可以cd到目标目录，执行hexo init。</p>
+</blockquote>
+<h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><p>cd 到你的init目录，执行如下命令，生成静态页面至hexo\public\目录。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<blockquote>
+<p>命令必须在init目录下执行，否则不成功，但是也不报错。</p>
+</blockquote>
+<p>当你修改文章Tag或内容，不能正确重新生成内容，可以删除hexo\db.json后重试，还不行就到public目录删除对应的文件，重新生成。</p>
+<p>在此过程中如出现</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">ERROR Local hexo not found in E:\Dropbox\Hexo</div><div class="line">ERROR Try running: &apos;npm install hexo --save&apos;</div></pre></td></tr></table></figure>
+<p>请执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install hexo --save</div></pre></td></tr></table></figure>
+<p>再次生成静态页面</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><p>执行如下命令，启动本地服务，进行文章预览调试。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
+<p>浏览器输入<a href="http://localhost:4000就可以看到效果。" target="_blank" rel="external">http://localhost:4000就可以看到效果。</a></p>
+<blockquote>
+<p>如打开失败，请运行下列代码，换个端口</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo s -p 3600</div></pre></td></tr></table></figure>
+<p><a href="http://localhost:3600" target="_blank" rel="external">http://localhost:3600</a></p>
+<h3 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h3><p>执行new命令，生成指定名称的文章至hexo\source_posts\postName.md。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo new 新建文章</div></pre></td></tr></table></figure>
+<h3 id="文章摘要"><a href="#文章摘要" class="headerlink" title="文章摘要"></a>文章摘要</h3><p>在需要显示摘要的地方添加如下代码即可：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">以上是摘要</div><div class="line"></div><div class="line">以下是余下全文</div></pre></td></tr></table></figure>
+<h3 id="自定义页面"><a href="#自定义页面" class="headerlink" title="自定义页面"></a>自定义页面</h3><p>执行new page命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo new page &quot;about&quot;</div></pre></td></tr></table></figure>
+<p>在hexo\source\下会生成about目录，里面有个index.md，直接编辑就可以了，然后在主题的_config.yml中将其配置显示出来。</p>
+<p>上述步骤，也可以手工生成，在hexo\source\下手工新建about和index.md也是完全等价的。</p>
+<h3 id="部署到git"><a href="#部署到git" class="headerlink" title="部署到git"></a>部署到git</h3><p>修改_config.yml文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git</div><div class="line">repo:</div><div class="line">github: git@github.com:meizaifeng/meizaifeng.github.com.git,master  #你的GitHub Pages仓库</div><div class="line">coding: git@git.coding.net:meizaifeng/meizaifeng.git,master  #你的coding仓库</div></pre></td></tr></table></figure>
+<p>执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<blockquote>
+<p>在执行 hexo deploy 后,若出现 error deployer not found:git 的错误,执行：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>再次执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h2 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h2><p>安装主题的方法就是一句git命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git clone https://github.com/heroicyang/hexo-theme-modernist.git themes/modernist    # modernist为主题名称</div></pre></td></tr></table></figure>
+<p>目录是否是modernist无所谓，只要与_config.yml文件一致即可。</p>
+<p>安装完成后，打开hexo_config.yml，修改主题<code>theme: modernist</code></p>
+<h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><h3 id="域名配置文件"><a href="#域名配置文件" class="headerlink" title="域名配置文件"></a>域名配置文件</h3><p>在source目录下创建一个<code>CNAME</code>文件，不带后缀。创建后写入你的域名.里面的内容为域名不要http以及www等前缀，只需写入域名本身，例如</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">meizaifeng.com</div></pre></td></tr></table></figure>
+<p>随后执行，这个是和coding关联的</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">cd source/</div><div class="line">touch Staticfile  #名字必须是Staticfile</div></pre></td></tr></table></figure>
+<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><h3 id="域名服务商修改dns"><a href="#域名服务商修改dns" class="headerlink" title="域名服务商修改dns"></a>域名服务商修改dns</h3><p>向你的 DNS 配置中添加 4 条记录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">主机记录  记录类型  记录值</div><div class="line"></div><div class="line">www      CNAME    username.github.io  #线路类型：国外</div><div class="line"></div><div class="line">@        CNAME    username.github.io  #线路类型：国外</div><div class="line"></div><div class="line">@        CNAME    pages.coding.me      #线路类型：国内</div><div class="line"></div><div class="line">www      CNAME    pages.coding.me      #线路类型：国内</div></pre></td></tr></table></figure>
 <h3 id="修改域名"><a href="#修改域名" class="headerlink" title="修改域名"></a>修改域名</h3><blockquote>
 <ul>
 <li><p>打开Coding的page服务，绑定自定义域名。</p>
@@ -680,7 +741,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册GitHub"><span class="nav-number">2.</span> <span class="nav-text">注册GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册Coding"><span class="nav-number">3.</span> <span class="nav-text">注册Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加ssh到GitHub、Coding"><span class="nav-number">4.</span> <span class="nav-text">添加ssh到GitHub、Coding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置用户名和密码"><span class="nav-number">4.1.</span> <span class="nav-text">设置用户名和密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成密钥"><span class="nav-number">4.2.</span> <span class="nav-text">生成密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改域名"><span class="nav-number">4.3.</span> <span class="nav-text">修改域名</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册GitHub"><span class="nav-number">2.</span> <span class="nav-text">注册GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册Coding"><span class="nav-number">3.</span> <span class="nav-text">注册Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加ssh到GitHub、Coding"><span class="nav-number">4.</span> <span class="nav-text">添加ssh到GitHub、Coding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置用户名和密码"><span class="nav-number">4.1.</span> <span class="nav-text">设置用户名和密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成密钥"><span class="nav-number">4.2.</span> <span class="nav-text">生成密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加SSH-Key到GitHub"><span class="nav-number">4.3.</span> <span class="nav-text">添加SSH Key到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加SSH-Key到Coding"><span class="nav-number">4.4.</span> <span class="nav-text">添加SSH Key到Coding</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">5.</span> <span class="nav-text">安装hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">5.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成静态页面"><span class="nav-number">5.2.</span> <span class="nav-text">生成静态页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地启动"><span class="nav-number">5.3.</span> <span class="nav-text">本地启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写文章"><span class="nav-number">5.4.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章摘要"><span class="nav-number">5.5.</span> <span class="nav-text">文章摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义页面"><span class="nav-number">5.6.</span> <span class="nav-text">自定义页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到git"><span class="nav-number">5.7.</span> <span class="nav-text">部署到git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题安装"><span class="nav-number">6.</span> <span class="nav-text">主题安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名绑定"><span class="nav-number">7.</span> <span class="nav-text">域名绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#域名配置文件"><span class="nav-number">7.1.</span> <span class="nav-text">域名配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解析"><span class="nav-number">7.2.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#域名服务商修改dns"><span class="nav-number">7.3.</span> <span class="nav-text">域名服务商修改dns</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改域名"><span class="nav-number">7.4.</span> <span class="nav-text">修改域名</span></a></li></ol></li></ol></div>
             
 
           </div>
